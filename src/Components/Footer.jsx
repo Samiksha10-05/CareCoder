@@ -23,7 +23,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Help Section */}
+        {/* Help Section */}  
         <div>
           <h3 className="text-xl font-bold">Help</h3>
           <ul className="mt-4 space-y-2">

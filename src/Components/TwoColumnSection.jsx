@@ -1,20 +1,20 @@
-import React from "react";
-import heroimg from "../assets/heroimg.png";
-import dots from "../assets/dots.svg";
+import React from 'react';
 
-export default function HeroSection() {
+const TwoColumnSection = ({ imageSrc, heading, description, buttonText, buttonLink, imageOnLeft = true }) => {
   return (
-    <>
-      <div className="relative flex flex-col-reverse lg:flex-row justify-between items-center p-8 gap-12 mx-10 md:mx-24 fontm">
-        {/* Left Side: Hero Text */}
+    <div className="py-16 bg-white">
+      <div className={`max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-16 px-6 lg:px-12 ${imageOnLeft ? '' : 'lg:flex-row-reverse'}`}>
+        {/* Left/Right side: Image */}
+        <div className="w-full lg:w-1/2">
+          <img src={imageSrc} alt="Section Image" className="w-full h-auto" />
+        </div>
+
+        {/* Left/Right side: Text */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h1 className="text-3xl lg:text-5xl font-semibold">
-            Revolutionize Your Health with AI Diagnostics
-          </h1>
-          <p className="mt-4 text-gray-600">
-            At Diagno Plus, we provide cutting-edge AI tools for early detection
-            of liver cirrhosis, brain tumors, and heart health. Access precise
-            and timely health insights, available at your fingertips.
+          <h2 className="text-3xl font-bold mb-4">{heading}</h2>
+          <div className="w-16 h-[2px] bg-gray-400 mb-4 mx-auto lg:mx-0"></div>
+          <p className="text-gray-600 mb-6">
+            {description}
           </p>
           <a
             href="#"
@@ -37,29 +37,14 @@ export default function HeroSection() {
               </svg>
             </span>
             <span className="absolute flex items-center justify-center w-full h-full text-green-500 transition-all duration-300 transform group-hover:translate-x-full ease">
-              Try These Tools
+              {buttonText}
             </span>
             <span className="relative invisible">Button Text</span>
           </a>
         </div>
-
-        {/* Right Side: Hero Image */}
-        <div className="w-full lg:w-1/2 mb-8 lg:mb-0 z-10">
-          <img src={heroimg} alt="Healthcare" className="w-full max-w-xl" />
-        </div>
       </div>
-
-      {/* Decorative Dots */}
-      <img
-        src={dots}
-        alt="Decorative Dots"
-        className="absolute left-0 top-1/3 -ms-2 transform -translate-y-1/2 w-[5em] z-0"
-      />
-      <img
-        src={dots}
-        alt="Decorative Dots"
-        className="absolute right-0 bottom-10 -ms-2 transform -translate-y-1/2 w-[5em] z-0"
-      />
-    </>
+    </div>
   );
-}
+};
+
+export default TwoColumnSection;

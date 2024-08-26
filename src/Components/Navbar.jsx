@@ -18,7 +18,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="flex justify-between items-center  bg-white mx-2 md:mx-10">
+    <nav className="flex justify-between items-center bg-white mx-2 md:mx-10 z-50 relative">
       <div className="text-2xl font-bold">
         <img src={logo} alt="Logo" className="w-24" />
       </div>
@@ -42,7 +42,7 @@ export default function Navbar() {
         </button>
       </div>
       {/* Nav links */}
-      <ul className={`lg:flex lg:space-x-8 lg:items-center lg:static lg:flex-row flex-col ${isOpen ? 'block' : 'hidden'} absolute top-16 left-0 right-0 bg-white lg:bg-transparent p-6 lg:p-0`}>
+      <ul className={`lg:flex lg:space-x-8 lg:items-center lg:static lg:flex-row flex-col ${isOpen ? 'block' : 'hidden'} absolute top-16 left-0 right-0 bg-white lg:bg-transparent p-6 lg:p-0 z-50`}>
         {navLinks.map((link, index) => (
           <li key={index} className="text-gray-600 hover:text-green-500 lg:my-0 my-2">
             <Link to={link.path}>{link.name}</Link>

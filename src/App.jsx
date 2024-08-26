@@ -6,6 +6,10 @@ import Services from './Components/Services';
 import Testimonial from './Components/Testimonials';
 import Footer from './Components/Footer';
 import LatestArticles from './Components/LatestArticles';
+import TwoColumnSection from './Components/TwoColumnSection';
+
+
+import heroimg from "./assets/heroimg.png"
 
 
 function App() {
@@ -14,6 +18,22 @@ function App() {
       <Navbar />
       <HeroSection />
       <Services />
+      <TwoColumnSection
+        imageSrc= {heroimg} // Replace with your image path
+        heading="Leading healthcare providers"
+        description="Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone."
+        buttonText="Learn more"
+        buttonLink="#"
+        imageOnLeft={true}  // Image on the left (default)
+      />
+      <TwoColumnSection
+        imageSrc= {heroimg} // Replace with your image path
+        heading="Leading healthcare providers"
+        description="Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone."
+        buttonText="Learn more"
+        buttonLink="#"
+        imageOnLeft={false}  // Image on the left (default)
+      />
       <Testimonial />
       <LatestArticles/>
       <Footer />

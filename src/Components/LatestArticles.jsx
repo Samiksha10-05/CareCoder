@@ -30,7 +30,7 @@ export default function LatestArticles() {
         <div className="w-16 h-[2px] bg-gray-400 mx-auto mb-8"></div>
 
         {/* Articles Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-10">
           {articles.map((article, index) => (
             <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
               <img src={article.image} alt={article.title} className="w-full h-48 object-cover" />

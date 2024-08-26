@@ -40,7 +40,7 @@ export default function Testimonial() {
   const { name, position, quote, image } = testimonials[currentIndex];
 
   return (
-    <div className="relative p-8 lg:p-16 bg-white overflow-hidden">
+    <div className="relative p-8 h-auto md:my-20 bg-white overflow-hidden">
       {/* Testimonial Card with Gradient Background */}
       <div className="relative z-10 p-8 rounded-lg bg-gradient-to-br from-[#00C342] to-[#00C341] mx-auto max-w-5xl flex flex-col items-center text-center">
         
@@ -110,7 +110,7 @@ export default function Testimonial() {
       <img
         src={dots}
         alt="Decorative Dots"
-        className="absolute right-[13em] bottom-1/4 transform translate-y-1/2 w-[5em] z-20 opacity-80"
+        className="absolute right-[13em] bottom-1/2 transform translate-y-1/2 w-[5em] z-20 opacity-80"
       />
     </div>
   );
