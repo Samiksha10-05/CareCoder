@@ -7,6 +7,7 @@ import Testimonial from './Components/Testimonials';
 import Footer from './Components/Footer';
 import LatestArticles from './Components/LatestArticles';
 import TwoColumnSection from './Components/TwoColumnSection';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 import heroimg from "./assets/heroimg.png"
