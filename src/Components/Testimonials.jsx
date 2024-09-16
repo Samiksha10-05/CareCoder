@@ -1,25 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import dots from '../assets/dots.svg';
 
-// Dummy testimonials data
+
+
 const testimonials = [
   {
     name: 'Edward Newgate',
     position: 'Founder Circle',
     quote: 'Our dedicated patient engagement app and web portal allow you to access information instantaneously with no tedious forms, long calls, or administrative hassles, and securely.',
-    image: 'https://via.placeholder.com/100', // Replace with actual image path
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ZqiKAzev2I1rEMC8iQdUSAQAfPo5-8qoNA&s", // Replace with actual image path
   },
   {
     name: 'Leslie Alexander',
     position: 'CEO HealthCorp',
     quote: 'The digital platform has revolutionized the way we deliver healthcare, making it more accessible and easier to manage.',
-    image: 'https://via.placeholder.com/100', // Replace with actual image path
+    image: "https://headshots-inc.com/wp-content/uploads/2023/03/professional-Headshot-Example-4-1.jpg", // Replace with actual image path
   },
   {
     name: 'John Doe',
     position: 'CTO MediTech',
     quote: 'Trafalgar has improved the overall experience for our patients, providing a seamless interface.',
-    image: 'https://via.placeholder.com/100', // Replace with actual image path
+    image: "https://rozasampolinska.com/wp-content/uploads/sites/13386/2019/12/Newburyport-professional-headshots-boston-corporate-headshots-photo-2-1.jpg", // Replace with actual image path
   },
 ];
 
@@ -42,7 +43,7 @@ export default function Testimonial() {
   return (
     <div className="relative p-8 h-auto md:my-20 bg-white overflow-hidden">
       {/* Testimonial Card with Gradient Background */}
-      <div className="relative z-10 p-8 rounded-lg bg-gradient-to-br from-[#00C342] to-[#00C341] mx-auto max-w-5xl flex flex-col items-center text-center">
+      <div className="relative z-10 p-8 rounded-lg bg-gradient-to-br bg-green-400  mx-auto max-w-5xl flex flex-col items-center text-center">
         
         {/* Heading Inside the Background */}
         <h2 className="text-2xl lg:text-3xl font-bold text-white mb-4">
@@ -71,7 +72,7 @@ export default function Testimonial() {
           <div
             key={index}
             className={`w-3 h-3 rounded-full ${
-              index === currentIndex ? 'bg-green-800' : 'bg-green-400'
+              index === currentIndex ? 'bg-[#B3D9DA]' : 'bg-[#B3D9DA] opacity-50'
             }`}
           ></div>
         ))}

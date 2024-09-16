@@ -2,19 +2,19 @@ import React from 'react';
 
 const articles = [
   {
-    image: 'https://via.placeholder.com/400x300', // Replace with actual image path
+    image: 'https://res.cloudinary.com/upwork-cloud/video/upload/c_scale,w_400/v1686626342/catalog/1668451847845965824/f6pkagsihqxu1qmomdrr.JPEG', // Replace with actual image path
     title: 'Disease detection, check up in the laboratory',
     description: 'In this case, the role of the health laboratory is very important to do a disease disease detection...',
     link: '#',
   },
   {
-    image: 'https://via.placeholder.com/400x300', // Replace with actual image path
+    image: 'https://www.mckinsey.com/~/media/mckinsey/industries/healthcare%20systems%20and%20services/our%20insights/german%20healthcare%20in%20the%20postpandemic%20era%20physician%20insights/german-healthcare-in-the-postpandemic-era-1536x1536.jpg?mw=677&car=42:25', // Replace with actual image path
     title: 'Herbal medicines that are safe for consumption',
     description: 'Herbal medicine is very widely used at this time because of its very good for your health...',
     link: '#',
   },
   {
-    image: 'https://via.placeholder.com/400x300', // Replace with actual image path
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWrIyNMyMtiWf3gdC5naKcPpjtyN02IrjuMQ&s', // Replace with actual image path
     title: 'Natural care for healthy facial skin',
     description: 'A healthy lifestyle should start from now and also for your skin health. There are some...',
     link: '#',

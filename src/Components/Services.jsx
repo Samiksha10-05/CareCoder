@@ -34,9 +34,9 @@ export default function Services() {
         {services.map((service, index) => (
           <div 
             key={index} 
-            className="p-16 bg-gray-100 rounded-lg border border-transparent opacity-80 border-green-400 hover:shadow-lg transition duration-300 ease-in-out text-center relative z-10"
+            className="p-8 bg-white rounded-lg border border-gray-300 hover:shadow-xl hover:scale-105 transition-transform transition-shadow duration-300 ease-in-out text-center"
           >
-            <img src={service.icon} alt={service.title} className="mb-5" />
+            <img src={service.icon} alt={service.title} className="mb-5 w-16 h-16 mx-auto" />
             <h3 className="mt-4 text-xl font-semibold">{service.title}</h3>
             <p className="mt-2 text-gray-600">{service.description}</p>
           </div>

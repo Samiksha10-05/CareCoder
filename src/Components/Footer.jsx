@@ -1,21 +1,20 @@
 import React from "react";
 
 const companyLinks = [
-  { name: "About", link: "/about" },
-  { name: "Testimonials", link: "/testimonials" },
-  { name: "Find a doctor", link: "/find-doctor" },
-  { name: "Apps", link: "/apps" },
+  { name: "About", link: "/workinprogress" },
+  { name: "Testimonials", link: "/workinprogress" },
+  { name: "Find a doctor", link: "/workinprogress" },
 ];
 
 const helpLinks = [
-  { name: "Help center", link: "/help-center" },
-  { name: "Instructions", link: "/instructions" },
-  { name: "How it works", link: "/how-it-works" },
+  { name: "Help center", link: "//workinprogress" },
+  { name: "Instructions", link: "//workinprogress" },
+  { name: "How it works", link: "//workinprogress" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-[#00C342] to-[#01b43d] text-white p-8 lg:p-16">
+    <footer className="bg-gradient-to-br from-[#23c483] to-[#40ab80] text-white p-8 lg:p-16">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* About Section */}
         <div>
