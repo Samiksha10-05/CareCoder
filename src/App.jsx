@@ -8,8 +8,8 @@ import Footer from './Components/Footer';
 import LatestArticles from './Components/LatestArticles';
 import TwoColumnSection from './Components/TwoColumnSection';
 import SkinCancerPrediction from './Components/SkinCancerPrediction';
-import BreastCancerPrediction from './Components/BreastCancerPrediction';
-import BrainTumorPrediction from './Components/BrainTumorPrediction';
+// import BreastCancerPrediction from './Components/BreastCancerPrediction';
+// import BrainTumorPrediction from './Components/BrainTumorPrediction';
 import ChatPanel from './Components/ChatPanel'; // Import the ChatPanel
 import left from "../src/assets/left.png";
 import right from "../src/assets/right.png";
@@ -17,7 +17,7 @@ import right from "../src/assets/right.png";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import heroimg from "./assets/heroimg.png";
 import FeatureUnderDevelopment from './Components/FeatureUnderDevelopement';
-import PneumoniaPrediction from './Components/PneumoniaPrediction';
+// import PneumoniaPrediction from './Components/PneumoniaPrediction';
 
 function Home() {
   return (
@@ -27,20 +27,20 @@ function Home() {
       <Services />
       <TwoColumnSection
         imageSrc={left}
-        heading="Skin Cancer Detection"
-        description="Early detection of skin cancer can save lives. Learn about our advanced skin cancer prediction tools and get accurate results quickly."
+        heading="Skin Disease Detection"
+        description="Early detection of skin disease can save lives. Learn about our advanced skin disease prediction tools and get accurate results quickly."
         buttonText="Learn more"
         buttonLink="/skin"
         imageOnLeft={true}
       />
-      <TwoColumnSection
+      {/* <TwoColumnSection
         imageSrc={right}
         heading="Breast Cancer Detection"
         description="Breast cancer detection and early diagnosis are crucial. Discover our comprehensive services for breast cancer prediction and care."
         buttonText="Learn more"
         buttonLink="/breast"
         imageOnLeft={false}
-      />
+      /> */}
       <Testimonial />
       <LatestArticles />
       <Footer />

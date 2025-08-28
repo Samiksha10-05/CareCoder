@@ -124,7 +124,7 @@ function SkinCancerPrediction() {
   return (
     <div className="min-h-screen py-20 bg-[#F0F4F8] flex flex-col items-center justify-center p-4">
       <h1 className="text-6xl font-bold text-[#23c483] mb-8 my-10">
-        Skin Cancer Prediction
+        Skin Disease Prediction
       </h1>
       <form
         onSubmit={handleSubmit}

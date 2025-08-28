@@ -16,7 +16,7 @@ export default function HeroSection() {
           Welcome to <span className="text-[#23c483]"> Diagno Plus+ </span>
         </h1>
         <p className="mt-4 text-gray-600">
-          At Diagno Plus+, we're revolutionizing healthcare with AI-driven diagnostics. Our advanced technology analyzes images to detect conditions like skin cancer, brain cancer, and more—providing accurate and timely insights for your health.
+          At Diagno Plus+, we're revolutionizing healthcare with AI-driven diagnostics. Our advanced technology analyzes images to detect skin-based disease and providing accurate and timely insights for your health.
         </p>
         <Button href="/skin" label="Get Started" />
       </motion.div>

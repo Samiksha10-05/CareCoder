@@ -11,10 +11,10 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Skin Cancer', path: '/skin' },
-    { name: 'Breast Cancer', path: '/breast' },
-    { name: 'Brain Tumor', path: '/brain'},
-    { name: 'Pneumonia', path: '/pneumonia' },
+    { name: 'Skin disease detection', path: '/skin' },
+    // { name: 'Breast Cancer', path: '/breast' },
+    // { name: 'Brain Tumor', path: '/brain'},
+    // { name: 'Pneumonia', path: '/pneumonia' },
     { name: 'Testimonials', path: '/workinprogress' },
     { name: 'About Us', path: '/workinprogress' },
   ];
